@@ -7,14 +7,14 @@ function Home(){
 
 
     return(
-        <div className="grid grid-cols-1 justify-items-center max-h-full">
+        <div className="bg-neutral grid grid-cols-1 justify-items-center h-full">
         <div className="h-96 w-fit carousel carousel-vertical rounded-box my-4">
         <img className = "carousel-item h-full" src = {Fritter}/>
         <img className = "carousel-item h-full" src = {PadThai }/>
         <img className = "carousel-item h-full" src = {Vegan}/>
         <img className = "carousel-item h-full" src = {Panang}/>
         </div>
-        <p>Authentic Thai Street Food </p>
+        <p class="text-3xl text-center text-logo mx-2">Authentic Thai Street Food in the heart of Glasgows West End</p>
         </div>
     );
 }
