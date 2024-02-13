@@ -35,9 +35,9 @@ function Navbar(){
   return(
 <nav ref = {domNode} className={'bg-neutral  sticky  z-50 '}>
 {/* Left most title on the navbar, animates when the drop down is opened using useSate and onClick */}
-    <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0 mx-2  " >
+    <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0  " >
     
-        <img src = {Oldlogo} className="border-2 border-neutral  size-16 rounded-lg"/>
+        <img src = {Oldlogo} className="border-2 border-neutral  size-16 "/>
         <HashLink  onClick = {()=>setOpen(!open)} className={ open ? "motion-safe:animate-fadeIn lg:flex btn btn-ghost normal-case text-2xl md:text-xl ": "motion-safe:animate-fadeOut lg:flex btn btn-ghost normal-case text-2xl md:text-xl"} to = "/#home" spy={true.toString()} smooth={true} offset={50} duration={500}></HashLink>
         
 

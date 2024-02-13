@@ -1,38 +1,16 @@
 import React from "react";
-import Footer from "./Footer"
-import Fritter from "../Components/ComponentImgs/Fritter.PNG" 
-import PadThai from "../Components/ComponentImgs/Pad Thai.PNG" 
-import Panang from "../Components/ComponentImgs/Panang red curry.PNG" 
-import Vegan from "../Components/ComponentImgs/vegan noodle.PNG" 
-import Assorted from "../Components/ComponentImgs/mango, basil, fry, green.PNG"
-function Home(){
 
+function Footer(){
 
     return(
-        <div>
-        <div className="hero min-h-screen bg-neutral">
-        <div className=" hero-content grid grid-cols-1 justify-items-center mx-2">
-        <div className=" carousel carousel-center max-w-md p-4 space-x-4 bg-neutral">
-        <img className = "carousel-item  " src = {Fritter}/>
-        <img className = "carousel-item " src = {PadThai }/>
-        <img className = "carousel-item " src = {Vegan}/>
-        <img className = "carousel-item " src = {Panang}/>
-        <img className = "carousel-item " src = {Assorted}/>
-        </div>
-        <p className ="text-2xl text-center text-logo mx-2">Authentic Thai Street Food in the heart of Glasgows West End</p>
-        </div>
 
-        
-        </div>
+<div className="bg-neutral">
 
-      
-<footer className="text-center footer p-10  text-base-content">
+{/* Slot for social links icons */}
 
-    <h6 className="footer-title">Services</h6> 
-    <a className="">Nois Bangkok Street Food Cafe</a>
-    
+
+<footer className="footer p-10 bg-neutral text-neutral-content">
    
-  
   <nav>
     <h6 className="footer-title">Social</h6> 
     <div className="grid grid-flow-col gap-4">
@@ -42,8 +20,13 @@ function Home(){
     </div>
   </nav>
 </footer>
-        </div>
+
+</div>
+
+
+
     );
+
 }
 
-export default Home;
+export default Footer;

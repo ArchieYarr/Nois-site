@@ -17,3 +17,7 @@ code {
     monospace;
 }
 
+.footer {
+  @apply gap-4;
+}
+
