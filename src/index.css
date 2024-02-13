@@ -19,5 +19,7 @@ code {
 
 .footer {
   @apply gap-4;
+  @apply place-items-center;
+ 
 }
 
