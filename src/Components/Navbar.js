@@ -33,11 +33,11 @@ function Navbar(){
   })
 
   return(
-<nav ref = {domNode} className={' bg-base-200  sticky  z-50 '}>
+<nav ref = {domNode} className={'   sticky  z-50 '}>
 {/* Left most title on the navbar, animates when the drop down is opened using useSate and onClick */}
-    <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0  " >
+    <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0 mx-2 my-2  " >
     
-        <img src = {Oldlogo} className="lg:m-2 size-16 rounded-lg"/>
+        <img src = {Oldlogo} className="lg:m-2  size-16 rounded-lg"/>
         <HashLink  onClick = {()=>setOpen(!open)} className={ open ? "motion-safe:animate-fadeIn lg:flex btn btn-ghost normal-case text-2xl md:text-xl ": "motion-safe:animate-fadeOut lg:flex btn btn-ghost normal-case text-2xl md:text-xl"} to = "/#home" spy={true.toString()} smooth={true} offset={50} duration={500}></HashLink>
         
 
@@ -49,17 +49,17 @@ function Navbar(){
         </div>
 
         {/* navbar content with the links to other pages or areas on the same page using HasLink for internal page functionality. Will open in mobile form when open is true  */}
-        <ul onClick = {()=>setOpen(!open)} className={`  bg-base-200 lg:bg-opacity-0 lg:flex lg:items-center lg:pb-0 absolute lg:static lg:z-auto z-[-1] left-0  w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${open ? 'top-12 ':'top-[-490px]'}`}>
+        <ul onClick = {()=>setOpen(!open)} className={`bg-neutral  lg:bg-opacity-0 lg:flex lg:items-center lg:pb-0 absolute lg:static lg:z-auto z-[-1] left-0  w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${open ? 'top-12 ':'top-[-490px]'}`}>
            <li> 
-            <HashLink className = "text-info btn btn-ghost active:bg-primary normal-case" to = "/#Services" spy={true.toString()} smooth={true} offset={50} duration={500}>Services</HashLink>
+            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Services" spy={true.toString()} smooth={true} offset={50} duration={500}>Services</HashLink>
 
            </li>  
            <li> 
-            <HashLink className = "text-info btn btn-ghost active:bg-primary normal-case" to = "/#Contact" spy={true.toString()} smooth={true} offset={50} duration={500}>Contact</HashLink>
+            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Contact" spy={true.toString()} smooth={true} offset={50} duration={500}>Contact</HashLink>
             
            </li>     
            <li> 
-            <HashLink className = "text-info btn btn-ghost active:bg-primary normal-case" to = "/#Gallery" spy={true.toString()} smooth={true} offset={50} duration={500}>Gallery</HashLink>
+            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Gallery" spy={true.toString()} smooth={true} offset={50} duration={500}>Gallery</HashLink>
             
            </li>           
         </ul>
