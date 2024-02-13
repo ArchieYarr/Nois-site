@@ -102,6 +102,11 @@ module.exports = {
             transform: "rotate(0.0deg)"
           }
         }
+      },
+
+      backgroundImage: {
+        'Services-iconimg' : "url('/src/Components/ComponentImgs/Fritter.PNG')"
+
       }
     }
   },
