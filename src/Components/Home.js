@@ -1,5 +1,9 @@
 import React from "react";
 import Footer from "./Footer"
+import Contact from "./Contact"
+import Services from "./Services"
+import Gallery from "./Gallery"
+
 import Fritter from "../Components/ComponentImgs/Fritter.PNG" 
 import PadThai from "../Components/ComponentImgs/Pad Thai.PNG" 
 import Panang from "../Components/ComponentImgs/Panang red curry.PNG" 
@@ -24,7 +28,23 @@ function Home(){
 
         
         </div>
-
+        
+        <div className="card w-96 bg-base-100 shadow-xl image-full overflow-hidden">
+  <figure><img src={Fritter} alt="Shoes" className="h-32 "/></figure>
+  <div className="card-body">
+    <h2 className="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+        <div>
+        <Gallery />
+        </div>
+        <div>
+        <Contact/>
+        </div>
       
     <Footer />
         </div>
