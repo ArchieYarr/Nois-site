@@ -33,7 +33,7 @@ function Navbar(){
   })
 
   return(
-<nav ref = {domNode} className={'bg-neutral  sticky  z-50 '}>
+<nav ref = {domNode} className={'bg-neutral  sticky top-0  z-50 '}>
 {/* Left most title on the navbar, animates when the drop down is opened using useSate and onClick */}
     <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0  " >
     
