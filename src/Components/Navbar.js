@@ -1,5 +1,5 @@
 import React,  { useState, useEffect, useRef } from "react";
-import { HashLink } from "react-router-hash-link";
+import {Link} from "react-router-dom"
 
 import Oldlogo from "../Components/ComponentImgs/Old logo.jpg" 
 function useClickOutside(handler){
@@ -37,8 +37,8 @@ function Navbar(){
 {/* Left most title on the navbar, animates when the drop down is opened using useSate and onClick */}
     <div  className = "  lg:flex lg:items-center  justify-between  h-16 left-0  " >
     
-        <img src = {Oldlogo} className="border-2 border-neutral  size-16 "/>
-        <HashLink  onClick = {()=>setOpen(!open)} className={ open ? "motion-safe:animate-fadeIn lg:flex btn btn-ghost normal-case text-2xl md:text-xl ": "motion-safe:animate-fadeOut lg:flex btn btn-ghost normal-case text-2xl md:text-xl"} to = "/#home" spy={true.toString()} smooth={true} offset={50} duration={500}></HashLink>
+        
+        <Link  onClick = {()=>setOpen(!open)} className={ open ? "motion-safe:animate-fadeIn lg:flex btn btn-ghost normal-case text-2xl md:text-xl ": "motion-safe:animate-fadeOut lg:flex btn btn-ghost normal-case text-2xl md:text-xl"} to = "/" ><img src = {Oldlogo} className="border-2 border-neutral  size-16 "/></Link>
         
 
         {/* Burger menu icon that switches to an x icon when clicked */}
@@ -51,15 +51,15 @@ function Navbar(){
         {/* navbar content with the links to other pages or areas on the same page using HasLink for internal page functionality. Will open in mobile form when open is true  */}
         <ul onClick = {()=>setOpen(!open)} className={`bg-neutral  lg:bg-opacity-0 lg:flex lg:items-center lg:pb-0 absolute lg:static lg:z-auto z-[-1] left-0  w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${open ? 'top-12 ':'top-[-490px]'}`}>
            <li> 
-            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Services" spy={true.toString()} smooth={true} offset={50} duration={500}>Services</HashLink>
+            <Link className = " btn btn-ghost active:bg-primary normal-case" to = "/Services" >Services</Link>
 
            </li>  
            <li> 
-            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Contact" spy={true.toString()} smooth={true} offset={50} duration={500}>Contact</HashLink>
+            <Link className = " btn btn-ghost active:bg-primary normal-case" to = "/Contact" >Contact</Link>
             
            </li>     
            <li> 
-            <HashLink className = " btn btn-ghost active:bg-primary normal-case" to = "/#Gallery" spy={true.toString()} smooth={true} offset={50} duration={500}>Gallery</HashLink>
+            <Link className = " btn btn-ghost active:bg-primary normal-case" to = "/Gallery" >Gallery</Link>
             
            </li>           
         </ul>

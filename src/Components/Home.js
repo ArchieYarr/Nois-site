@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer"
+import {Link} from "react-router-dom"
 import Contact from "./Contact"
 import Services from "./Services"
 import Gallery from "./Gallery"
@@ -27,8 +28,7 @@ function Home(){
         </div>
 
         
-        </div>
-        
+        </div>    
 <div className="card max-w-screen m-2  bg-Services-iconimg bg-center shadow-xl image-full overflow-hidden">
   
   <div className="card-body">
@@ -37,6 +37,8 @@ function Home(){
     
   </div>
 </div>
+
+
 <div className="card max-w-screen m-2  bg-Gallery-iconimg bg-center shadow-xl image-full overflow-hidden">
   
   <div className="card-body">
@@ -45,6 +47,7 @@ function Home(){
     
   </div>
 </div>
+
 <div className="card h-fit max-w-screen m-2  bg-Contact-iconimg bg-center shadow-xl image-full overflow-hidden">
   
   <div className="card-body ">
