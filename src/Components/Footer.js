@@ -16,7 +16,8 @@ function Footer(){
     <address>
         <p className="underline decoration-solid">
     <a rel = "noopener" target = "_blank" href = "https://www.google.com/maps/place/The+Dockyard+Social/@55.8649712,-4.2965519,17z/data=!3m1!4b1!4m6!3m5!1s0x488845d6e88d7e23:0x690d0e7b3cb4ea5!8m2!3d55.8649683!4d-4.2916864!16s%2Fg%2F11h9rlb7wp?entry=ttu">
-    <p className = "">Noi's Bangkok Street Food</p>
+    Noi's Bangkok Street Food
+    <br/>
     The Dockyard Social
     <br/>
     95-107 Haugh Road

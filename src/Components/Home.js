@@ -14,7 +14,7 @@ function Home(){
 
     return(
         <div>
-        <div className="hero min-h-screen bg-neutral">
+        <div className="hero  bg-neutral">
         <div className=" hero-content grid grid-cols-1 justify-items-center mx-2">
         <div className=" carousel carousel-center max-w-md p-4 space-x-4 bg-neutral">
         <img className = "carousel-item  " src = {Fritter}/>
@@ -29,22 +29,30 @@ function Home(){
         
         </div>
         
-        <div className="card w-fit m-2  bg-Services-iconimg bg-center shadow-xl image-full overflow-hidden">
+<div className="card max-w-screen m-2  bg-Services-iconimg bg-center shadow-xl image-full overflow-hidden">
   
   <div className="card-body">
-    <h2 className="card-title">Services</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-center">
-      
-    </div>
+    <h2 className="card-title justify-center text-white">Services</h2>
+    
+    
   </div>
 </div>
-        <div>
-        <Gallery />
-        </div>
-        <div>
-        <Contact/>
-        </div>
+<div className="card max-w-screen m-2  bg-Gallery-iconimg bg-center shadow-xl image-full overflow-hidden">
+  
+  <div className="card-body">
+    <h2 className="card-title justify-center text-white">Gallery</h2>
+    
+    
+  </div>
+</div>
+<div className="card h-fit max-w-screen m-2  bg-Contact-iconimg bg-center shadow-xl image-full overflow-hidden">
+  
+  <div className="card-body ">
+    <h2 className="card-title justify-center text-white">Contact</h2>
+    
+  
+  </div>
+</div>
       
     <Footer />
         </div>

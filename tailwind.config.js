@@ -105,7 +105,9 @@ module.exports = {
       },
 
       backgroundImage: {
-        'Services-iconimg' : "url('/src/Components/ComponentImgs/Fritter.PNG')"
+        'Services-iconimg' : "url('/src/Components/ComponentImgs/Fritter.PNG')",
+        'Gallery-iconimg' : "url('/src/Components/ComponentImgs/vegan noodle.PNG')",
+        'Contact-iconimg' : "url('/src/Components/ComponentImgs/Panang red curry.PNG')"
 
       }
     }
